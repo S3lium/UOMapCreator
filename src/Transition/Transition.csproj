@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{A96392E4-ACE3-4FF1-A9AD-28E7C6E3D228}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Transition</RootNamespace>
+    <AssemblyName>Transition</AssemblyName>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Terrain\Terrain.csproj" />
+    <ProjectReference Include="..\Ultima\Ultima.csproj" />
+  </ItemGroup>
+</Project>

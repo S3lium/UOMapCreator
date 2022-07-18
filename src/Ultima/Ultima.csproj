@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{27F2D0CB-E224-4CE3-8683-11CDED1576BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ultima</RootNamespace>
+    <AssemblyName>Ultima</AssemblyName>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0-preview.6.22324.4" />
+  </ItemGroup>
+</Project>

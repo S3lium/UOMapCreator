@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{9665236F-4092-40A0-A73C-CBFEF944CED3}</ProjectGuid>
+    <AssemblyName>Terrain</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Terrain</RootNamespace>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>

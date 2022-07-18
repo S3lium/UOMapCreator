@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{C3B9E62D-D8AF-471E-B4D6-0C1E2AE6E485}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CreateColorTable</RootNamespace>
+    <AssemblyName>CreateColorTable</AssemblyName>
+    <TargetFramework>net6.0-windows</TargetFramework>
+	  <UseWindowsForms>true</UseWindowsForms>
+	  <UseWPF>true</UseWPF>
+  </PropertyGroup>
+	<ItemGroup>
+		<None Include="..\..\Data\**" Link="Data\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="Always" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Elevation\Elevation.csproj" />
+    <ProjectReference Include="..\Logger\Logger.csproj" />
+    <ProjectReference Include="..\Terrain\Terrain.csproj" />
+    <ProjectReference Include="..\Transition\Transition.csproj" />
+    <ProjectReference Include="..\Ultima\Ultima.csproj" />
+  </ItemGroup>
+</Project>

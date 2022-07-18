@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{2DB14F29-B468-41FD-AB78-A5FA986CEBD1}</ProjectGuid>
+    <AssemblyName>Elevation</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Elevation</RootNamespace>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Data\**" />
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Data\**" />
+    <None Remove="Properties\**" />
+    <Page Remove="Data\**" />
+    <Page Remove="Properties\**" />
+  </ItemGroup>
+</Project>

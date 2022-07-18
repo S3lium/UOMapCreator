@@ -1,0 +1,15 @@
+# http://editorconfig.org
+root=true
+
+[*]
+indent_style = space
+tab_width = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.cs]
+csharp_style_namespace_declarations = block_scoped:warning
+csharp_using_directive_placement = outside_namespace
+csharp_preserve_single_line_blocks = true

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{D76B34BD-3635-47F1-8D86-94A88C47DF34}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CreateBitmaps</RootNamespace>
+    <AssemblyName>CreateBitmaps</AssemblyName>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+	<ItemGroup>
+		<None Include="..\..\Data\**" Link="Data\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="Always" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Elevation\Elevation.csproj" />
+    <ProjectReference Include="..\Logger\Logger.csproj" />
+    <ProjectReference Include="..\Terrain\Terrain.csproj" />
+    <ProjectReference Include="..\Ultima\Ultima.csproj" />
+  </ItemGroup>
+</Project>

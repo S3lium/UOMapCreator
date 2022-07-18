@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <Authors>Corex UO Team</Authors>
+    <Company>CorexUO</Company>
+    <PublicRelease>true</PublicRelease>
+    <BaseOutputPath>..\..\bin\$(MSBuildProjectName)\</BaseOutputPath>
+    <BaseIntermediateOutputPath>..\..\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <EnableBaseIntermediateOutputPathMismatchWarning>false</EnableBaseIntermediateOutputPathMismatchWarning>
+    <PredefinedCulturesOnly>false</PredefinedCulturesOnly>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+</Project>

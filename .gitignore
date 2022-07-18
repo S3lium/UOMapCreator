@@ -1,0 +1,14 @@
+/obj
+/bin
+
+*.db
+*.user
+*.suo
+*.vs
+*.dll
+*.obj
+*.exe
+*.pdb
+*deps.json
+*runtimeconfig*json
+/.idea

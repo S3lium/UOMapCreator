@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{C9DEDD3C-5ADF-49B0-95FA-D05BD5CE5B94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CreateStatics</RootNamespace>
+    <AssemblyName>CreateStatics</AssemblyName>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+	<ItemGroup>
+		<None Include="..\..\Data\**" Link="Data\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="Always" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Terrain\Terrain.csproj" />
+    <ProjectReference Include="..\Transition\Transition.csproj" />
+    <ProjectReference Include="..\Ultima\Ultima.csproj" />
+  </ItemGroup>
+</Project>

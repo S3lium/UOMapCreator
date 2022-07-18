@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{27238E6B-4404-4C97-AA6B-105E7D308E48}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CreateTransitions</RootNamespace>
+    <AssemblyName>CreateTransitions</AssemblyName>
+    <TargetFramework>net6.0-windows</TargetFramework>
+	  <UseWindowsForms>true</UseWindowsForms>
+	  <UseWPF>true</UseWPF>
+  </PropertyGroup>
+	<ItemGroup>
+		<None Include="..\..\Data\**" Link="Data\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="Always" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Elevation\Elevation.csproj" />
+    <ProjectReference Include="..\Logger\Logger.csproj" />
+    <ProjectReference Include="..\Terrain\Terrain.csproj" />
+    <ProjectReference Include="..\Transition\Transition.csproj" />
+    <ProjectReference Include="..\Ultima\Ultima.csproj" />
+    <ProjectReference Include="..\CreateBitmaps\CreateBitmaps.csproj" />
+    <ProjectReference Include="..\CreateColorTable\CreateColorTable.csproj" />
+    <ProjectReference Include="..\CreateDataIndex\CreateDataIndex.csproj" />
+    <ProjectReference Include="..\CreateElevationBitmap\CreateElevationBitmap.csproj" />
+    <ProjectReference Include="..\CreateFacet\CreateFacet.csproj" />
+    <ProjectReference Include="..\CreateStatics\CreateStatics.csproj" />
+  </ItemGroup>
+</Project>
